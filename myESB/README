@@ -1,0 +1,4 @@
+ESB端主要问题在于对：防串包的处理
+
+防串包的产生：
+ESB端和COREBANK通信方式是ActiveMQ,
