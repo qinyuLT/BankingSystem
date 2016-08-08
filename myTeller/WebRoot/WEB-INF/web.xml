@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+<!--  登录-->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.dc.servlet.LoginServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+<!-- 开户 -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.dc.servlet.RegisterServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 获得流水号-->
+  <servlet>
+    <servlet-name>FlowNoServlet</servlet-name>
+    <servlet-class>com.dc.servlet.FlowNoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>FlowNoServlet</servlet-name>
+  <url-pattern>/FlowNoServlet</url-pattern>
+  </servlet-mapping>
+  
+<!--  存款-->
+  <servlet>
+    <servlet-name>PutMoneyServlet</servlet-name>
+    <servlet-class>com.dc.servlet.PutMoneyServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>PutMoneyServlet</servlet-name>
+  <url-pattern>/PutMoneyServlet</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 取款-->
+  <servlet>
+    <servlet-name>GetMoneyServlet</servlet-name>
+    <servlet-class>com.dc.servlet.GetMoneyServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>GetMoneyServlet</servlet-name>
+  <url-pattern>/GetMoneyServlet</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 解挂-->
+  <servlet>
+    <servlet-name>ReportingServlet</servlet-name>
+    <servlet-class>com.dc.servlet.ReportingServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>ReportingServlet</servlet-name>
+  <url-pattern>/ReportingServlet</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 挂失-->
+   <servlet>
+    <servlet-name>ReportingLostServlet</servlet-name>
+    <servlet-class>com.dc.servlet.ReportingLostServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>ReportingLostServlet</servlet-name>
+  <url-pattern>/ReportingLostServlet</url-pattern>
+  </servlet-mapping>
+  
+<!--  -->
+  <servlet>
+    <servlet-name>LeaveServlet</servlet-name>
+    <servlet-class>com.dc.servlet.LeaveServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>LeaveServlet</servlet-name>
+  <url-pattern>/LeaveServlet</url-pattern>
+  </servlet-mapping>
+
+<!--  查询-->
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.dc.servlet.SearchServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>SearchServlet</servlet-name>
+  <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 转账-->
+  <servlet>
+    <servlet-name>TransferServlet</servlet-name>
+    <servlet-class>com.dc.servlet.TransferServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>TransferServlet</servlet-name>
+  <url-pattern>/TransferServlet</url-pattern>
+  </servlet-mapping>
+  
+<!--  日终-->
+  <servlet>
+    <servlet-name>DayEndServlet</servlet-name>
+    <servlet-class>com.dc.servlet.DayEndServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>DayEndServlet</servlet-name>
+  <url-pattern>/DayEndServlet</url-pattern>
+  </servlet-mapping>
+  
+<!--  冲正-->
+   <servlet>
+    <servlet-name>FlushServlet</servlet-name>
+    <servlet-class>com.dc.servlet.FlushServlet</servlet-class>
+  </servlet>
+
+<!-- 改密 -->
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeAccPsw</servlet-name>
+    <servlet-class>com.dc.servlet.ChangeAccPsw</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>ChangeAccPsw</servlet-name>
+  	<url-pattern>/com.dc.servlet.ChangeAccPsw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeAccPsw</servlet-name>
+    <url-pattern>/ChangeAccPsw</url-pattern>
+  </servlet-mapping>
+
+</web-app>
