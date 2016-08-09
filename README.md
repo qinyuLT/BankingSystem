@@ -4,6 +4,9 @@
 开发一款小型的银行业务综合系统， 系统可以通过银行工作人员应答客户需求， 实现基本的账户开户、客户开户、 转账、 贷款、 冲正、 日终等操作。 
 使用工具和技术： myEclipse、 Tomcat、 Toad for Oracle、 PowerDesigned、 ActiveMQ、 Socket、 JMS 等
 
+##系统架构图
+![](https://github.com/qinyuLT/Images/bankingsystem.png)  </br>
+
 ##Teller端：
   Teller端用户从IE页面输入消息，通过http与tomcat通信，每一个业务功能对应一个servlet进行处理</br>
   servlet将从IE页面获取到的消息再通过Tcp短连接与ESB端建立socket通信，进行消息传递；</br>
