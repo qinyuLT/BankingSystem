@@ -5,7 +5,7 @@
 使用工具和技术： myEclipse、 Tomcat、 Toad for Oracle、 PowerDesigned、 ActiveMQ、 Socket、 JMS 等
 
 ##系统架构图
-![](https://github.com/qinyuLT/Images/bankingsystem.png)  </br>
+![](https://raw.githubusercontent.com/qinyuLT/Images/master/bankingsystem.png)  </br>
 
 ##Teller端：
   Teller端用户从IE页面输入消息，通过http与tomcat通信，每一个业务功能对应一个servlet进行处理</br>
